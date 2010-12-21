@@ -12,5 +12,6 @@ group :development do
 end
 
 group :test do
+  gem 'rspec'
   gem 'database_cleaner', :git => 'http://github.com/bmabey/database_cleaner.git'
 end
