@@ -8,8 +8,9 @@ gem 'do_mysql',   '~>0.10'
 
 group :development do
   gem "ruby-debug"
+  gem "rspec"
 end
 
 group :test do
-  gem "rspec"
+  gem 'database_cleaner', :git => 'http://github.com/bmabey/database_cleaner.git'
 end

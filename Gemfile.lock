@@ -1,3 +1,9 @@
+GIT
+  remote: http://github.com/bmabey/database_cleaner.git
+  revision: 9bd76e743de34175f22c1bd649af32a123dfe547
+  specs:
+    database_cleaner (0.6.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -64,6 +70,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  database_cleaner!
   datamapper (~> 0.10.2)
   do_mysql (~> 0.10)
   rake
