@@ -1,16 +1,11 @@
-source :gemcutter
+source "https://rubygems.org"
 
-gem 'rack', '1.2.2'
+gem 'rack'
 gem 'rake'
 gem 'sinatra'
-gem 'unicorn',    '1.1.3'
-gem 'datamapper', '~>0.10.2'
-gem 'do_mysql',   '~>0.10'
-
-group :development do
-  gem "ruby-debug"
-end
+gem 'unicorn'
 
 group :test do
+  # test deps to test bundle exclusion on deploy
   gem "rspec"
 end
