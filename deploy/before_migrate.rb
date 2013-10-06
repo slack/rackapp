@@ -1,5 +1,5 @@
 puts '**** HOOK ****'
-if migrate?
+if config.migrate?
   puts "I am running migrations!"
 else
   puts "No migrations for me."
