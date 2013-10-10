@@ -1,11 +1,6 @@
-#
-# Cookbook Name:: main
-# Recipe:: default
-#
+# default cookbook
 
-execute "restart-monit" do
-  command %Q{ monit quit || [[ $? == 1 ]]}
-  action :nothing
+# only run on app boxes
+if ["app_master", "app", "solo"].include?(node[:instance_role])
+  require_recipe "myapp"
 end
-
-include_recipe 'god'
