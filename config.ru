@@ -33,6 +33,8 @@ class SinatraApp < Sinatra::Base
 NOW   = #{Time.now}
 COMM  = #{process.comm}
 CWD   = #{Dir.pwd}
+PID   = #{process.pid}
+PPID  = #{process.ppid}
 START = #{process.starttime}
 SHA   = #{%x(git rev-parse HEAD)}
     OUTPUT
