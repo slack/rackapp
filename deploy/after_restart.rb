@@ -5,6 +5,6 @@ on_app_master do
 end
 
 # tell god to reload processes
-on_app_servers do
-  sudo 'god signal api-workers QUIT'
-end
+# on_app_servers do
+#   sudo 'god signal api-workers QUIT'
+# end
