@@ -20,6 +20,7 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
+    sys-proctable (0.9.4)
     tilt (1.4.1)
     unicorn (4.6.3)
       kgio (~> 2.6)
@@ -34,4 +35,5 @@ DEPENDENCIES
   rake
   rspec
   sinatra
+  sys-proctable
   unicorn
