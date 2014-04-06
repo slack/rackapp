@@ -8,6 +8,10 @@ require "sys/proctable"
 class SinatraApp < Sinatra::Base
   include Sys
 
+  before do
+    content_type "text/plain"
+  end
+
   get "/" do
     "Dinky little Sinatra app is up and running, ye salty sea dog!\n"
   end
