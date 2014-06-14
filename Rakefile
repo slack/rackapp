@@ -6,3 +6,9 @@ namespace :work do
     puts "Done working."
   end
 end
+
+namespace :db do
+  task :migrate do
+    puts "noop"
+  end
+end
