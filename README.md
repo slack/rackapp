@@ -16,6 +16,14 @@ Random 500:
 
     GET /flaky
 
+Random sub-second sleep:
+
+    GET /pokey
+
+Process and ENV Dump:
+
+    GET /check/dump
+
 ## Custom chef
 
 This repository has a set of custom cookbooks that modify your Engine Yard environment. Cookbooks are stored in the `cookbooks` directory of this app and are checked into git.
