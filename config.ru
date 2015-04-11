@@ -27,6 +27,12 @@ class SinatraApp < Sinatra::Base
     end
   end
 
+  get "/pokey" do
+    nap = 1.0 / rand(2..30).to_f
+    sleep nap
+    "OK, slept #{nap}s\n"
+  end
+
   get "/check/dump" do
     process = ProcTable.ps($$)
     output = <<-OUTPUT
@@ -38,6 +44,8 @@ PPID  = #{process.ppid}
 START = #{process.starttime}
 SHA   = #{%x(git rev-parse HEAD)}
     OUTPUT
+
+    puts output
   end
 end
 
