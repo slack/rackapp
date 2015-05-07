@@ -45,7 +45,7 @@ START = #{process.starttime}
 SHA   = #{%x(git rev-parse HEAD)}
     OUTPUT
 
-    puts output
+    output
   end
 end
 
