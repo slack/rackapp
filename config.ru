@@ -3,6 +3,7 @@ require "bundler"
 Bundler.setup
 
 require "sinatra/base"
+require "newrelic_rpm"
 require "sys/proctable"
 
 module Tools
