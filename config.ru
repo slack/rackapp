@@ -5,6 +5,17 @@ Bundler.setup
 require "sinatra/base"
 require "sys/proctable"
 
+module Tools
+  # naive implementation of fibonacci to drive high-cpu usage on purpose
+  def self.fib(n)
+    if n <= 1
+      1
+    else
+      fib(n - 1) + fib(n - 2)
+    end
+  end
+end
+
 class SinatraApp < Sinatra::Base
   include Sys
 
@@ -46,6 +57,15 @@ SHA   = #{%x(git rev-parse HEAD)}
     OUTPUT
 
     output
+  end
+
+  get "/expensive/:num" do
+    number = params[:num].to_i
+    if number > 40
+      "not going to do it"
+    else
+      "number: #{params[:num]} result: #{Tools.fib(number)}"
+    end
   end
 end
 
