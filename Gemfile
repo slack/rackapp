@@ -9,6 +9,7 @@ gem "sinatra"
 gem "sys-proctable"
 gem "unicorn"
 gem "newrelic_rpm"
+gem "puma"
 
 group :test do
   # test deps to test bundle exclusion on deploy
