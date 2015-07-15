@@ -24,6 +24,10 @@ Process and ENV Dump:
 
     GET /check/dump
 
+Compute naive fibonacci sequnce of `:num`, burns CPU cycles:
+
+    GET /expensive/:num
+
 ## Custom chef
 
 This repository has a set of custom cookbooks that modify your Engine Yard environment. Cookbooks are stored in the `cookbooks` directory of this app and are checked into git.
