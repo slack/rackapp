@@ -29,7 +29,7 @@ class SinatraApp < Sinatra::Base
   end
 
   get "/health" do
-    "OK\n"
+    status 500
   end
 
   get "/flaky" do
